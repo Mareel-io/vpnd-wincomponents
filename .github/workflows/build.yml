@@ -1,0 +1,18 @@
+# SPDX-FileCopyrightText: 2022 Empo Inc.
+#
+# SPDX-License-Identifier: CC0-1.0
+
+name: release
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+    name: Build
+    runs-on: windows-latest
+    steps:
+      - name: Build binary
+        run: msbuild windns.sln
+        working-directory: ./windns
