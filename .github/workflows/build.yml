@@ -20,5 +20,17 @@ jobs:
         with:
           submodules: 'true'
       - name: Build binary
-        run: msbuild windns.sln
+        run: msbuild windns.sln -p:Configuration=Release
         working-directory: windns
+      - name: artifact prep
+        run: mkdir -p ./artifacts
+        shell: bash
+      - name: Copy artifacts
+        run: cp -r windns/bin ./artifacts/windns
+        shell: bash
+      - name: Artifacts upload
+        uses: actions/upload-artifact@v2
+        with:
+          name: artifacts
+          path: |
+            artifacts/**
