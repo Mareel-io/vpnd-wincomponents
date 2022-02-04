@@ -1,3 +1,7 @@
+// SPDX-FileCopyrightText: 2022 Mullvad VPN AB
+//
+// SPDX-License-Identifier: GPL-3.0-or-later
+
 #pragma once
 
 // Including SDKDDKVer.h defines the highest available Windows platform.

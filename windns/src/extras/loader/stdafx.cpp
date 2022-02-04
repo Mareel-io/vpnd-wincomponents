@@ -1,3 +1,7 @@
+// SPDX-FileCopyrightText: 2022 Mullvad VPN AB
+//
+// SPDX-License-Identifier: GPL-3.0-or-later
+
 // stdafx.cpp : source file that includes just the standard includes
 // dnstest.pch will be the pre-compiled header
 // stdafx.obj will contain the pre-compiled type information
